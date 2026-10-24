@@ -71,3 +71,25 @@ print(s) #show only element {'apple', 'cherry', 'banana'}, there is no error sho
 
 
 
+
+
+
+###
+old_subscriber = {"rafia1@gmail.com","sarif10@gmail.com","sadia101@gmail.com","hasan111@gmail.com"}
+new_subscriber = {"sadia101@gmail.com","hasan111@gmail.com","sayem201@gmail.com","adnan211@gmail.com"}
+
+#total indivisual unique subscriber:
+total_unique = old_subscriber.union(new_subscriber)
+print(total_unique) #6 {'sayem201@gmail.com', 'sarif10@gmail.com', 'hasan111@gmail.com', 'rafia1@gmail.com', 'adnan211@gmail.com', 'sadia101@gmail.com'}
+
+#common subscriber:
+loyal = old_subscriber.intersection(new_subscriber)
+print(loyal) #2 {'sadia101@gmail.com', 'hasan111@gmail.com'}
+
+#Only old subscriber, jara new subscriber na
+only_old = old_subscriber.difference(new_subscriber)
+print(only_old) #2 {'rafia1@gmail.com', 'sarif10@gmail.com'}
+
+#Only new subscriber, jara old subscriber na
+only_new = new_subscriber.difference(old_subscriber)
+print(only_new) #2 {'sayem201@gmail.com', 'adnan211@gmail.com'}
