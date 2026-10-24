@@ -27,3 +27,47 @@ print(ss) #{'cherry', 'apple', 'banana'}
 
 sss = {2,3,1,4}
 print(sss) #{1, 2, 3, 4}
+
+
+#No indexing
+"""
+s = {1,2,35,5,4,3}
+print(s[1]) #error
+
+s = {"apple","banana","cherry"}
+print(s[0]) #error
+
+"""
+
+
+###Set Methods
+
+#add element
+s = {"apple","banana","cherry"}
+s.add("mango")
+print(s)
+
+
+my_set = {"apple", "banana"}
+my_set.add("cherry")
+print(my_set)  # Output: {'banana', 'cherry', 'apple'} (Note: sets are unordered)
+
+# Trying to add a duplicate has no effect
+my_set.add("apple")
+print(my_set)  # Output: {'banana', 'cherry', 'apple'}
+
+#remove element (remove if element available, if not available then show error)
+s = {"apple","banana","cherry"}
+s.remove("apple")
+print(s) #{'cherry', 'banana'}
+
+#s.remove("cricket")
+#print(s) #error
+
+#discard element (if element are not available on set that we want to remove and try to avoid error then we have to use it)
+s = {"apple","banana","cherry"}
+s.discard("cricket")
+print(s) #show only element {'apple', 'cherry', 'banana'}, there is no error show
+
+
+
