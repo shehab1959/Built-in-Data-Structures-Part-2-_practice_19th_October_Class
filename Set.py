@@ -93,3 +93,13 @@ print(only_old) #2 {'rafia1@gmail.com', 'sarif10@gmail.com'}
 #Only new subscriber, jara old subscriber na
 only_new = new_subscriber.difference(old_subscriber)
 print(only_new) #2 {'sayem201@gmail.com', 'adnan211@gmail.com'}
+
+
+
+
+
+#Set charecteristics
+#Mutable -> Yes
+#Duplicate -> No
+#Index -> No
+#Order -> No
