@@ -38,10 +38,60 @@ print(d.get(1, "not found")) #Moja, as 1 value available
 
 
 ##Some Dictionary Methods
+d = {
+    "name":"Hejbulla",
+    "age":23,
+    "work":"xyz",
+    2:"Moja"
+}
+print(d.keys()) #(['name', 'age', 'work', 2])
+print(d.values()) #(['Hejbulla', 23, 'xyz', 'Moja'])
+print(d.items()) #([('name', 'Hejbulla'), ('age', 23), ('work', 'xyz'), (2, 'Moja')])
+
+#replace values
+print(d["age"]) #23
+d["age"] = 33
+print(d["age"]) #33
+print(d) #{'name': 'Hejbulla', 'age': 33, 'work': 'xyz', 2: 'Moja'}
+
+#add element
+d["city"] = "Gazipur"
+d["Country"] = "Bangladesh"
+print(d) #{'name': 'Hejbulla', 'age': 33, 'work': 'xyz', 2: 'Moja', 'city': 'Gazipur', 'Country': 'Bangladesh'}
+
+#also add element by using "update()"
+d.update({"School":"BUSH", "Clg":"GCC"})
+print(d) #{'name': 'Hejbulla', 'age': 33, 'work': 'xyz', 2: 'Moja', 'city': 'Gazipur', 'Country': 'Bangladesh', 'School': 'BUSH', 'Clg': 'GCC'}
+
+
+#Pop element
+d.popitem()
+print(d) #{'name': 'Hejbulla', 'age': 33, 'work': 'xyz', 2: 'Moja', 'city': 'Gazipur', 'Country': 'Bangladesh', 'School': 'BUSH'}
+#it just remove the last item
+
+d.pop("age")
+print(d) #{'name': 'Hejbulla', 'work': 'xyz', 2: 'Moja', 'city': 'Gazipur', 'Country': 'Bangladesh', 'School': 'BUSH'}
+#remove specific element(age with value)
+
+
+#If there are same key, then value take from last key
+d = {
+    "name":"Hejbulla",
+    "age":23,
+    "work":"xyz",
+    "name":"Asad"
+}
+print(d) #{'name': 'Asad', 'age': 23, 'work': 'xyz'}
 
 
 
-
+##Structred Information
+Student_info = {
+    "Shovon" : {"roll":123, "city":"Dhaka", "age": 30},
+    "Maria" : {"roll":234, "city":"Gazipur", "age": 19}
+}
+print(Student_info["Maria"]) #{'roll': 234, 'city': 'Gazipur', 'age': 19}
+print(Student_info["Shovon"]["city"]) #Dhaka
 
 
 
@@ -54,3 +104,12 @@ print(type(r)) #dict
 #t = () -> empty touple
 #d = {} -> empty dictionary
 #s = set() -> empty set
+
+
+
+
+#Set characteristics
+#Mutable -> Yes
+#Duplicate -> value can be duplicate but not key
+#Index -> No
+#Order -> Yes

@@ -98,7 +98,7 @@ print(only_new) #2 {'sayem201@gmail.com', 'adnan211@gmail.com'}
 
 
 
-#Set charecteristics
+#Set characteristics
 #Mutable -> Yes
 #Duplicate -> No
 #Index -> No
