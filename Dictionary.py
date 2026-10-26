@@ -106,8 +106,6 @@ print(type(r)) #dict
 #s = set() -> empty set
 
 
-
-
 #Set characteristics
 #Mutable -> Yes
 #Duplicate -> value can be duplicate but not key
